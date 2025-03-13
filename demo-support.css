@@ -48,3 +48,8 @@
 audio {
   width: 100%;
 }
+
+.demo-article-footer {
+  display: flex;
+  justify-content: flex-end;
+}
