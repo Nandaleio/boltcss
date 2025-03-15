@@ -244,6 +244,24 @@
       Sorry, your browser doesn't support embedded videos.
     </video>
 
+    <!-- article -->
+    <h3 class="demo-header">article</h3>
+    <article>
+      article content ...
+    </article>
+
+    <article>
+      <header>
+        <h3>Example Card</h3>
+        <small>with header and footer</small>
+      </header>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi nesciunt, nulla officiis quo eligendi asperiores rerum dicta sapiente, harum aliquam pariatur! Tenetur quia ipsa consectetur, perferendis consequuntur accusantium nam.
+      <footer class="demo-article-footer">
+        <button>Details</button>
+      </footer>
+    </article>
+
+
     <!-- table -->
     <h3 class="demo-header">table</h3>
     <table>
@@ -415,6 +433,9 @@
         <h3 class="demo-header">progress</h3>
         <label for="file">File progress</label>
         <progress id="file" max="100" value="70">70%</progress>
+
+        <label for="indeterminate">Indeterminate progress</label>
+        <progress id="indeterminate"></progress>
       </div>
 
       <!-- output -->
@@ -434,6 +455,23 @@
       </div>
     </div>
 
+    <!-- dialog -->
+     <div>
+      <h3 class="demo-header">dialog</h3>
+      <button type="button" onclick="document.getElementById('dialog').showModal()">Open as modal</button>
+      <button type="button" onclick="document.getElementById('dialog').open = true">Open as dialog</button>
+      <dialog id="dialog">
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+    </div>
+
+    <div>
+      <h3 class="demo-header">loading</h3>
+      <span aria-busy="true"></span>
+    </div>
 
     <!-- Footer -->
     <footer class="demo-footer">

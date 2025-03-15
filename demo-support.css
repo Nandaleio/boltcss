@@ -49,6 +49,7 @@ audio {
   width: 100%;
 }
 
+
 .demo-popover-content {
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -56,3 +57,7 @@ audio {
   padding: 0.7rem;
 }
 
+.demo-article-footer {
+  display: flex;
+  justify-content: flex-end;
+}
