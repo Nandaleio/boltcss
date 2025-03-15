@@ -576,6 +576,13 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
+/* Popover */
+[popover] {
+  inset: unset;
+  margin: 0.5em;
+  position-area: top;
+  position-try-fallbacks: flip-block;
+  
 /* Dialog */
 dialog {
   border: 1px solid var(--border);
@@ -613,5 +620,4 @@ article {
     border-top: 1px solid var(--border);
     margin-top: 0.5rem;
   }
-
 }
