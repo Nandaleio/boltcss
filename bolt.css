@@ -554,7 +554,7 @@ fieldset {
 
 /* Interactive elements */
 details {
-  border: 1px solid #aaa;
+  border: 1px solid var(--border);
   border-radius: 7px;
   padding: 0.5em 0.5em 0;
 }
@@ -570,7 +570,7 @@ details[open] {
 }
 
 details[open] summary {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid var(--border);
   margin-bottom: 0.5em;
 }
 
