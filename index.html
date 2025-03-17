@@ -320,11 +320,11 @@
     <!-- popover -->
     <div>
       <h3 class="demo-header">popover</h3>
-      <button id="popover-btn" popovertarget="popover-content" type="button">Open Popover</button>
+      <button id="popover-btn" popovertarget="popover-content">Open Popover</button>
       <div popover anchor="popover-btn" id="popover-content" class="demo-popover-content">
-        <p>Are you sure ?</p>
-        <button type="button">Yes</button>
-        <button type="button">No</button>
+        <p>Are you sure about that ?</p>
+        <button>Yes</button>
+        <button>No</button>
       </div>
      </div>
 
@@ -389,6 +389,20 @@
       <option value="spider">Spider</option>
       <option value="goldfish">Goldfish</option>
     </select>
+
+    <h3 class="demo-header">select with selectedcontent</h3>
+    <label for="pet-select-selectedcontent">Choose a pet</label>
+    <select name="pets" id="pet-select-selectedcontent">
+      <button><selectedcontent></selectedcontent></button>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
+
+
 
     <!-- text area -->
     <h3 class="demo-header">text area</h3>
