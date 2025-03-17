@@ -582,7 +582,8 @@ details[open] summary {
   margin: 0.5em;
   position-area: top;
   position-try-fallbacks: flip-block;
-  
+}
+
 /* Dialog */
 dialog {
   border: 1px solid var(--border);
