@@ -11,54 +11,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
   </head>
-  <body class="demo-body">
-    <div class="demo-topnav">
-      <h1>⚡️Bolt.css</h1>
-      <div>
-        <a href="https://github.com/tbolt/boltcss">GitHub</a>
+  <body>
+
+    <div id="sidenav" class="demo-side-nav">
+      <div class="demo-links">
+        <a href="#home">Home</a>
+        <a href="#address">address</a>
+        <a href="#aside">aside</a>
+        <a href="#headings">heading</a>
+        <a href="#nav">nav</a>
+        <a href="#inline-text">inline text elements</a>
+        <a href="#blockquote">blockquote</a>
+        <a href="#dl">dl</a>
+        <a href="#ol">ol</a>
+        <a href="#ul">ul</a>
+        <a href="#pre">pre</a>
+        <a href="#img">image</a>
+        <a href="#audio">audio</a>
+        <a href="#video">video</a>
+        <a href="#article">article</a>
+        <a href="#table">table</a>
+        <a href="#button">button</a>
+        <a href="#datalist">datalist</a>
+        <a href="#popover">popover</a>
+        <a href="#fieldset">fieldset</a>
+        <a href="#form">form</a>
+        <a href="#select">select</a>
+        <a href="#textarea">textarea</a>
+        <a href="#summary-details">summary/details</a>
+        <a href="#meter">meter</a>
+        <a href="#optgroup">optgroup</a>
+        <a href="#progress">progress</a>
+        <a href="#range-label">range</a>
+        <a href="#color-picker">color picker</a>
+        <a href="#dialogs">dialog</a>
+        <a href="#loading">loading</a>
       </div>
+
     </div>
-    <p>Basic styles for HTML Elements. Providing a mostly-reasonable set of styles without classes.</p>
-    <p>
-      Use it for simple static sites or as a starting point and add your own classes. This is not a complete solution
-      with layout grids, components, utility classes, and the like.
-    </p>
-    <h2>Features</h2>
-    <ul>
-      <li>No layout support</li>
-      <li>No CSS classes</li>
-      <li>Tiny</li>
-      <li>Dark and Light modes</li>
-    </ul>
-    <h2>How and why I made this</h2>
-    <p>
-      I used the fantastic
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements Reference</a>
-      on MDN and modified it as needed.
-    </p>
-    <p>I created Bolt.css because I wanted to</p>
-    <ol>
-      <li>Pay homage to HTML</li>
-      <li>Have an exercise to learn more of the lesser-known tags/elements</li>
-      <li>Use it in other projects</li>
-    </ol>
-    <h2>How to use</h2>
-    <p>
-      Grab the
-      <a href="https://github.com/tbolt/boltcss/blob/master/bolt.css">bolt.css</a>
-      stylesheet and add it manually to your app/site.
-    </p>
-    <p>
-      Alternatively, drop this right into your <code>&lt;head&gt;</code> to use it via a CDN.
-      <code class="demo-code">&lt;link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css"&gt;</code>
-    </p>
-    <h2 class="demo-break">Demos</h2>
+    <div class="demo-content">
+      <div class="demo-topbar">
+        <span>
+          <h1>⚡️Boltaleio.css</h1>
+        </span>
+        <a href="https://github.com/Nandaleio/boltcss">GitHub</a>
+      </div>
+      <div class="demo-body">
+
+        <span id="home"></span>
+
+        <p>Basic styles for HTML Elements. Providing a mostly-reasonable set of styles without classes.</p>
+        <p>
+          Use it for simple static sites or as a starting point and add your own classes. This is not a complete solution
+          with layout grids, components, utility classes, and the like.
+        </p>
+        <h2>Features</h2>
+        <ul>
+          <li>No layout support</li>
+          <li>No CSS classes</li>
+          <li>Tiny</li>
+          <li>Dark and Light modes</li>
+        </ul>
+        <h2>How and why I made this</h2>
+        <p>
+          I used the fantastic
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements Reference</a>
+          on MDN and modified it as needed.
+        </p>
+        <p>I created Bolt.css because I wanted to</p>
+        <ol>
+          <li>Pay homage to HTML</li>
+          <li>Have an exercise to learn more of the lesser-known tags/elements</li>
+          <li>Use it in other projects</li>
+        </ol>
+        <h2>How to use</h2>
+        <p>
+          Grab the
+          <a href="https://github.com/tbolt/boltcss/blob/master/bolt.css">bolt.css</a>
+          stylesheet and add it manually to your app/site.
+        </p>
+        <p>
+          Alternatively, drop this right into your <code>&lt;head&gt;</code> to use it via a CDN.
+          <code class="demo-code">&lt;link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css"&gt;</code>
+        </p>
+
+        <h2 class="demo-break">Demos</h2>
     <hr />
 
     <!-- Content sectioning -->
 
     <!-- address -->
-    <h3 class="demo-header">address</h3>
+    <h3 class="demo-header" id="address">address</h3>
     <address>
       <a href="mailto:jim@rock.com">jim@rock.com</a>
       <br />
@@ -69,7 +112,7 @@
     <!-- not provided -->
 
     <!-- aside -->
-    <h3 class="demo-header">aside</h3>
+    <h3 class="demo-header" id="aside">aside</h3>
     <!-- Todo: figure out how to handle content padding dependent on float direction -->
     <aside style="float: right">The Rough-skinned Newt defends itself with a deadly neurotoxin.</aside>
     <p>
@@ -89,7 +132,7 @@
     <!-- not provided -->
 
     <!-- headings h1-h6 -->
-    <h3 class="demo-header">headings</h3>
+    <h3 class="demo-header" id="headings">headings</h3>
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -104,7 +147,7 @@
     <!-- not provided -->
 
     <!-- nav -->
-    <h3 class="demo-header">nav</h3>
+    <h3 class="demo-header" id="nav">nav</h3>
      <nav>
       <a href="#">Link 1</a>
       <a href="#">Link 2</a>
@@ -116,7 +159,7 @@
     <!-- not provided yet -->
 
     <!-- Inline text elements  -->
-    <h3 class="demo-header">inline text elements</h3>
+    <h3 class="demo-header" id="inline-text">inline text elements</h3>
     <p>
       When Dave asks <a href="https://wikipedia.org/HAL_9000">HAL</a> to open the pod bay door, HAL answers:
       <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q>
@@ -170,7 +213,7 @@
     </small>
 
     <!-- blockquote -->
-    <h3 class="demo-header">blockquote</h3>
+    <h3 class="demo-header" id="blockquote">blockquote</h3>
     <blockquote cite="https://www.huxley.net/bnw/four.html">
       <p>
         Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.
@@ -179,7 +222,7 @@
     </blockquote>
 
     <!-- description list -->
-    <h3 class="demo-header">dl (description list)</h3>
+    <h3 class="demo-header" id="dl">dl (description list)</h3>
     <dl>
       <dt>Beast of Bodmin</dt>
       <dd>A large feline inhabiting Bodmin Moor.</dd>
@@ -200,7 +243,7 @@
     </figure> -->
 
     <!-- ol -->
-    <h3 class="demo-header">ol (ordered list)</h3>
+    <h3 class="demo-header" id="ol">ol (ordered list)</h3>
     <ol>
       <li>Mix flour, baking powder, sugar, and salt.</li>
       <li>In another bowl, mix eggs, milk, and oil.</li>
@@ -210,7 +253,7 @@
     </ol>
 
     <!-- ul -->
-    <h3 class="demo-header">ul (unordered list)</h3>
+    <h3 class="demo-header" id="ul">ul (unordered list)</h3>
     <ul>
       <li>Neil Armstrong</li>
       <li>Alan Bean</li>
@@ -220,7 +263,7 @@
     </ul>
 
     <!-- pre -->
-    <h3 class="demo-header">pre</h3>
+    <h3 class="demo-header" id="pre">pre</h3>
     <pre role="img" aria-label="ASCII COW">
  ___________________________
 | I'm an expert in my field.|
@@ -233,25 +276,25 @@
     </pre>
 
     <!-- img -->
-    <h3 class="demo-header">img</h3>
+    <h3 class="demo-header" id="img">img</h3>
     <img src="snow.jpg" alt="Photo of a snowy landscape" />
 
     <!-- audio -->
-    <h3 class="demo-header">audio</h3>
+    <h3 class="demo-header" id="audio">audio</h3>
     <audio controls src="zeldaprelude.mp3">
       Your browser does not support the
       <code>audio</code> element.
     </audio>
 
     <!-- video -->
-    <h3 class="demo-header">video</h3>
+    <h3 class="demo-header" id="video">video</h3>
     <video controls poster="poster.png">
       <source src="bigbunny.mp4" type="video/mp4" />
       Sorry, your browser doesn't support embedded videos.
     </video>
 
     <!-- article -->
-    <h3 class="demo-header">article</h3>
+    <h3 class="demo-header" id="article">article</h3>
     <article>
       article content ...
     </article>
@@ -269,7 +312,7 @@
 
 
     <!-- table -->
-    <h3 class="demo-header">table</h3>
+    <h3 class="demo-header" id="table">table</h3>
     <table>
       <thead>
         <tr>
@@ -305,12 +348,12 @@
     <!-- form elements -->
 
     <!-- buttons -->
-    <h3 class="demo-header">button</h3>
+    <h3 class="demo-header" id="button">button</h3>
     <button type="button">Save</button>
     <button type="button" disabled>Disabled</button>
 
     <!-- datalist -->
-    <h3 class="demo-header">datalist</h3>
+    <h3 class="demo-header" id="datalist">datalist</h3>
     <label for="ice-cream-choice">Choose a flavor</label>
     <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
     <datalist id="ice-cream-flavors">
@@ -325,7 +368,7 @@
 
     <!-- popover -->
     <div>
-      <h3 class="demo-header">popover</h3>
+      <h3 class="demo-header" id="popover">popover</h3>
       <button id="popover-btn" popovertarget="popover-content">Open Popover</button>
       <div popover anchor="popover-btn" id="popover-content" class="demo-popover-content">
         <p>Are you sure about that ?</p>
@@ -335,7 +378,7 @@
      </div>
 
     <!-- fieldset -->
-    <h3 class="demo-header">fieldset</h3>
+    <h3 class="demo-header" id="fieldset">fieldset</h3>
     <form>
       <fieldset>
         <legend>Choose your favorite monster</legend>
@@ -355,7 +398,7 @@
     </form>
 
     <!-- form -->
-    <h3 class="demo-header">form</h3>
+    <h3 class="demo-header" id="form">form</h3>
     <form action="#" method="get">
       <div class="form-example">
         <label for="name"> Full name </label>
@@ -385,7 +428,7 @@
     </form>
 
     <!-- select -->
-    <h3 class="demo-header">select</h3>
+    <h3 class="demo-header" id="select">select</h3>
     <label for="pet-select">Choose a pet</label>
     <select name="pets" id="pet-select">
       <option value="dog">Dog</option>
@@ -396,27 +439,13 @@
       <option value="goldfish">Goldfish</option>
     </select>
 
-    <h3 class="demo-header">select with selectedcontent</h3>
-    <label for="pet-select-selectedcontent">Choose a pet</label>
-    <select name="pets" id="pet-select-selectedcontent">
-      <button><selectedcontent></selectedcontent></button>
-      <option value="dog">Dog</option>
-      <option value="cat">Cat</option>
-      <option value="hamster">Hamster</option>
-      <option value="parrot">Parrot</option>
-      <option value="spider">Spider</option>
-      <option value="goldfish">Goldfish</option>
-    </select>
-
-
-
     <!-- text area -->
-    <h3 class="demo-header">text area</h3>
+    <h3 class="demo-header" id="textarea">text area</h3>
     <textarea id="story" name="story" placeholder="It was a dark and stormy night..." rows="7" cols="66"></textarea>
 
     <!-- interactive elements -->
     <!-- summary/details -->
-    <h3 class="demo-header">summary/details</h3>
+    <h3 class="demo-header" id="summary-details">summary/details</h3>
     <details>
       <summary>Details</summary>
       Something small enough to escape casual notice.
@@ -425,14 +454,14 @@
     <div class="misc-components">
       <!-- meter -->
       <div>
-        <h3 class="demo-header">meter</h3>
+        <h3 class="demo-header" id="meter">meter</h3>
         <label for="fuel">Fuel level</label>
         <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="77"></meter>
       </div>
 
       <!-- optgroup -->
       <div>
-        <h3 class="demo-header">optgroup</h3>
+        <h3 class="demo-header" id="optgroup">optgroup</h3>
         <label for="dino-select">Choose a dinosaur</label>
         <select id="dino-select">
           <optgroup label="Theropods">
@@ -450,7 +479,7 @@
 
       <!-- progress -->
       <div>
-        <h3 class="demo-header">progress</h3>
+        <h3 class="demo-header" id="progress">progress</h3>
         <label for="file">File progress</label>
         <progress id="file" max="100" value="70">70%</progress>
 
@@ -469,7 +498,7 @@
       
       <!-- color -->
       <div>
-        <h3 class="demo-header">color picker</h3>
+        <h3 class="demo-header" id="color-picker">color picker</h3>
         <label for="color-picker">Pick a color</label>
         <input type="color" id="color-picker" value="#843AB2" />
       </div>
@@ -477,7 +506,7 @@
 
     <!-- dialog -->
      <div>
-      <h3 class="demo-header">dialog</h3>
+      <h3 class="demo-header" id="dialogs">dialog</h3>
       <button type="button" onclick="document.getElementById('dialog').showModal()">Open as modal</button>
       <button type="button" onclick="document.getElementById('dialog').open = true">Open as dialog</button>
       <dialog id="dialog">
@@ -489,7 +518,7 @@
     </div>
 
     <div>
-      <h3 class="demo-header">loading</h3>
+      <h3 class="demo-header" id="loading">loading</h3>
       <span aria-busy="true"></span>
     </div>
 
@@ -500,5 +529,8 @@
         <a href="https://archive.org/details/SavantTrigger_Zelda_Prelude">Audio Attribution</a>
       </small>
     </footer>
+
+      </div>
+    </div>
   </body>
 </html>
