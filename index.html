@@ -351,6 +351,8 @@
     <h3 class="demo-header" id="button">button</h3>
     <button type="button">Save</button>
     <button type="button" disabled>Disabled</button>
+    <input type="button" value="Input"/>
+    <input type="button" value="Disabled" disabled/>
 
     <!-- datalist -->
     <h3 class="demo-header" id="datalist">datalist</h3>
@@ -417,6 +419,10 @@
         <input type="date" id="date" name="date" value="2006-01-02" />
       </div>
       <div class="form-example">
+        <label for="date"> File </label>
+        <input type="file" id="file" name="file" />
+      </div>
+      <div class="form-example">
         <label for="surprise">
           <input type="checkbox" id="surprise" name="surprise" value="" />
           Add a surprise
@@ -439,6 +445,36 @@
       <option value="goldfish">Goldfish</option>
     </select>
 
+    <!-- multi select -->
+    <h3 class="demo-header" id="select">multi select</h3>
+    <label for="pet-select">Choose some pets</label>
+    <select name="pets" multiple id="pet-select">
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
+
+      <!-- optgroup -->
+      <div>
+        <h3 class="demo-header" id="optgroup">optgroup</h3>
+        <label for="dino-select">Choose a dinosaur</label>
+        <select id="dino-select">
+          <optgroup label="Theropods">
+            <option>Tyrannosaurus</option>
+            <option>Velociraptor</option>
+            <option>Deinonychus</option>
+          </optgroup>
+          <optgroup label="Sauropods">
+            <option>Diplodocus</option>
+            <option>Saltasaurus</option>
+            <option>Apatosaurus</option>
+          </optgroup>
+        </select>
+      </div>
+
     <!-- text area -->
     <h3 class="demo-header" id="textarea">text area</h3>
     <textarea id="story" name="story" placeholder="It was a dark and stormy night..." rows="7" cols="66"></textarea>
@@ -457,24 +493,6 @@
         <h3 class="demo-header" id="meter">meter</h3>
         <label for="fuel">Fuel level</label>
         <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="77"></meter>
-      </div>
-
-      <!-- optgroup -->
-      <div>
-        <h3 class="demo-header" id="optgroup">optgroup</h3>
-        <label for="dino-select">Choose a dinosaur</label>
-        <select id="dino-select">
-          <optgroup label="Theropods">
-            <option>Tyrannosaurus</option>
-            <option>Velociraptor</option>
-            <option>Deinonychus</option>
-          </optgroup>
-          <optgroup label="Sauropods">
-            <option>Diplodocus</option>
-            <option>Saltasaurus</option>
-            <option>Apatosaurus</option>
-          </optgroup>
-        </select>
       </div>
 
       <!-- progress -->

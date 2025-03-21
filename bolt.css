@@ -402,7 +402,9 @@ button:active {
 }
 
 button:disabled,
-button[disabled] {
+button[disabled],
+input[type="button"]:disabled,
+input[type="submit"]:disabled {
   box-shadow: none;
   border: 1px solid var(--border);
   cursor: initial;
@@ -461,6 +463,15 @@ input[type="radio"]:checked {
 input[type="range"] {
   vertical-align: middle;
   padding: 0;
+}
+
+input[type="file"]::file-selector-button {
+  color: var(--text);
+  background-color: var(--background-main);
+  padding: 6px 15px 6px 15px;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  margin-right: 0.5rem;;
 }
 
 input[type="color"] {
@@ -522,7 +533,7 @@ select {
 }
 
 /* Todo: update styles when using multiple mode */
-select:is([multiple]) {
+select[multiple] {
   background: none;
   height: fit-content;
 }
@@ -533,15 +544,24 @@ select, ::picker(select) {
   border-radius: var(--border-radius);
   max-width: none;
 
-  option::checkmark {
-    display: none;
-  }
-  option {
+  >option {
     padding: 0.5rem;
+  }
+
+  >optgroup {
+    margin: 0.5rem 0;
+
+    >option {
+      padding: 0.5rem;
+      padding-left: 1rem;
+    }
   }
 
   option:checked {
     background-color: var(--background-main);
+  }
+  option::checkmark {
+    display: none;
   }
 }
 select::picker-icon {
