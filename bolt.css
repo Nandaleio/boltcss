@@ -776,10 +776,10 @@ dialog[drawer-top] {
 
 [aria-busy=true]:not(input, select, textarea, html)::before {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   background-image: var(--loading-icon-url);
-  background-size: 1em auto;
+  background-size: 2em auto;
   background-repeat: no-repeat;
   content: "";
   vertical-align: -0.125em;
