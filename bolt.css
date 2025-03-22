@@ -678,6 +678,100 @@ details[open] summary {
 dialog {
   border: 1px solid var(--border);
   border-radius: var(--border-radius);
+  position: absolute;
+}
+dialog[open] {
+  animation: fadein 0.2s ease-in forwards;
+}
+
+@keyframes fadein{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+
+dialog[drawer-right] {
+  height: 100vh;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  margin-right: 0;
+
+  &[open]{
+    animation: slideright 0.2s ease-in forwards;
+  }
+}
+@keyframes slideright{
+  0%{
+    transform:translateX(100%);
+  }
+  100%{
+    transform:translateX(0);
+  }
+}
+
+dialog[drawer-left] {
+  height: 100vh;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  margin-left: 0;
+
+  &[open]{
+    animation: slideleft 0.2s ease-in forwards;
+  }
+}
+@keyframes slideleft{
+  0%{
+    transform:translateX(-100%);
+  }
+  100%{
+    transform:translateX(0);
+  }
+}
+
+dialog[drawer-bottom] {
+  width: 100vw;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+
+  &[open]{
+    animation: slideup 0.2s ease-in forwards;
+  }
+}
+@keyframes slideup{
+  0%{
+    transform:translateY(100%);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+
+dialog[drawer-top] {
+  width: 100vw;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+  margin-top: 0;
+
+  &[open]{
+    animation: slidedown 0.2s ease-in forwards;
+  }
+}
+@keyframes slidedown{
+  0%{
+    transform:translateY(-100%);
+  }
+  100%{
+    transform:translateY(0);
+  }
 }
 
 [aria-busy=true]:not(input, select, textarea, html)::before {
