@@ -45,6 +45,7 @@
         <a href="#range-label">range</a>
         <a href="#color-picker">color picker</a>
         <a href="#dialogs">dialog</a>
+        <a href="#drawer">drawer</a>
         <a href="#loading">loading</a>
       </div>
 
@@ -528,6 +529,45 @@
       <button type="button" onclick="document.getElementById('dialog').showModal()">Open as modal</button>
       <button type="button" onclick="document.getElementById('dialog').open = true">Open as dialog</button>
       <dialog id="dialog">
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+    </div>
+
+    <div>
+      <h3 class="demo-header" id="drawer">drawers</h3>
+      <button type="button" onclick="document.getElementById('drawer-left').showModal()">Open left drawer</button>
+      <!-- <button type="button" onclick="document.getElementById('dialog').open = true">Open as dialog</button> -->
+      <dialog id="drawer-left" drawer-left>
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
+      <button type="button" onclick="document.getElementById('drawer-right').showModal()">Open right drawer</button>
+      <!-- <button type="button" onclick="document.getElementById('dialog').open = true">Open as dialog</button> -->
+      <dialog id="drawer-right" drawer-right>
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
+      <button type="button" onclick="document.getElementById('drawer-top').showModal()">Open top drawer</button>
+      <!-- <button type="button" onclick="document.getElementById('dialog').open = true">Open as dialog</button> -->
+      <dialog id="drawer-top" drawer-top>
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
+      <button type="button" onclick="document.getElementById('drawer-bottom').showModal()">Open bottom drawer</button>
+      <!-- <button type="button" onclick="document.getElementById('dialog').open = true">Open as dialog</button> -->
+      <dialog id="drawer-bottom" drawer-bottom>
         <p>Greetings, one and all!</p>
         <form method="dialog">
           <button>OK</button>
