@@ -809,12 +809,6 @@ article {
   }
 }
 
-span[separator] {
-  display: block;
-  border-top: 1px solid var(--border);
-  margin: 1rem 0;
-}
-
 *[skeleton] {
   display: block;
   border-radius: var(--border-radius);  
